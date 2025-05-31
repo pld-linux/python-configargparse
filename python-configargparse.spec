@@ -1,5 +1,6 @@
 %define		module ConfigArgParse
 Summary:	A Python module with support for argparse, config files, and env variables
+Summary(pl.UTF-8):	Moduł Pythona wspomagający korzystanie z argparse, plików konfiguracyjnych i zmiennych środowiskowych
 Name:		python-configargparse
 Version:	0.13.0
 Release:	9
@@ -22,6 +23,16 @@ files, hard coded defaults, and in some cases, environment variables.
 Python's command line parsing modules such as argparse have very
 limited support for config files and environment variables, so this
 module extends argparse to add these features.
+
+%description -l pl.UTF-8
+Aplikacje z więcej niż kilkoma opcjami ustawianymi przez użytkownika
+najlepiej się konfiguruje połączeniem argumentów wiersza poleceń,
+plików konfiguracyjnych, zakodowanych opcji domyślnych oraz, w
+niektórych przypadkach, zmiennych środowiskowych.
+
+Moduły Pythona do analizy wiersza poleceń, takie jak argparse, mają
+bardzo ograniczoną obsługę plików konfiguracyjnych i zmiennych
+środowiskowych, więc ten moduł rozszerza argparse o tę funkcjonalność.
 
 %prep
 %setup -q -n %{module}-%{version}
